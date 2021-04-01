@@ -31,7 +31,7 @@ steps:
     volumes:
     args:
     - yq
-    - write
+    - w
     - '-i'
     - /workspace/$_CD_REPO/chart/values.yaml
     - image.tag
