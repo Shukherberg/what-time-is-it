@@ -1,5 +1,5 @@
 substitutions:
-  _CD_REPO: CD_Repo
+  _CD_REPO: CD_Repomy
 
 steps:
   - name: gcr.io/cloud_builders/docker
@@ -45,5 +45,5 @@ steps:
       set -x && \
       cd /workspace/$_CD_REPO && \
       git add . && \
-      git commit -m "CI: ${COMMIT_SHA} Author: $(git log --format='%an <%ae>' -n 1 HEAD)" && \
+      git commit -m "CI: ${COMMIT_SHA} Author: ulvibsu@gmail.com" && \
       git push
