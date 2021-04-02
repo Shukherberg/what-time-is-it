@@ -30,12 +30,10 @@ steps:
     id: Update chart
     volumes:
     args:
-    - write
-    - '-i'
+    - e
+    - 'image.tag = "$COMMIT_SHA"'
+    - i
     - /workspace/$_CD_REPO/chart/values.yaml
-    - image.tag
-    - $COMMIT_SHA
-
   - name: gcr.io/cloud-builders/gcloud
     id: Push CD
     entrypoint: /bin/sh
