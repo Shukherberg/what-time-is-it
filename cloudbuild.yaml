@@ -32,7 +32,7 @@ steps:
     args:
     - e
     - 'image.tag = "$COMMIT_SHA"'
-    - i
+    - '-i'
     - /workspace/$_CD_REPO/chart/values.yaml
   - name: gcr.io/cloud-builders/gcloud
     id: Push CD
