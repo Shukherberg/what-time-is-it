@@ -31,7 +31,7 @@ steps:
     volumes:
     args:
     - e
-    - 'image.tag = "$COMMIT_SHA"'
+    - ''.image.tag = "$COMMIT_SHA"''
     - '-i'
     - /workspace/$_CD_REPO/chart/values.yaml
   - name: gcr.io/cloud-builders/gcloud
