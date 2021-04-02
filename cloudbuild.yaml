@@ -30,8 +30,7 @@ steps:
     id: Update chart
     volumes:
     args:
-    - yq
-    - w
+    - write
     - '-i'
     - /workspace/$_CD_REPO/chart/values.yaml
     - image.tag
