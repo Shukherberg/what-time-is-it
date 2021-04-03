@@ -47,3 +47,5 @@ steps:
       git add . && \
       git commit -m "CI: ${COMMIT_SHA} Author: ulvibsu@gmail.com" && \
       git push
+
+      
